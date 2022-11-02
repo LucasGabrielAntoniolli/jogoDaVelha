@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Roboto+Mono:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>VELHA</title>
+</head>
+<body>
+    <div id="mensagem">
+        <h1 id="text"></h1>
+    </div>
+
+    <div id="divbtn">
+        <button id="btn1">2 jogadores</button>
+        <button id="btn2">1 jogador</button>
+    </div>
+
+        <button id="voltar">Voltar</button>
+
+    <div class="jogo">
+        <table>
+            <tr>
+                <td id="1" class="t1"></td>
+                <td id="2" class="t2"></td>
+                <td id="3" class="t3"></td>
+            </tr>
+            <tr>
+                <td id="4" class="t4"></td>
+                <td id="5" class="t5"></td>
+                <td id="6" class="t6"></td>
+            </tr>
+            <tr>
+                <td id="7" class="t7"></td>
+                <td id="8" class="t8"></td>
+                <td id="9" class="t9"></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="rodapé">
+        <div class="pontos">
+            <div>
+                <h3 class="x">X: </h3> <h3 id="x">0</h3>
+            </div>
+            <div>
+                <h3 class="o">O: </h3> <h3 id="o">0</h3>
+            </div>
+            <div>
+                <h3 class="v">Velha: </h3> <h3 id="velha">0</h3>
+            </div>
+            <div>
+                <button onclick="limpaStrg()" class="btn-limpaStrg">Limpar</button>
+            </div>
+        </div>  
+        
+        <div>
+            <div class="escolherSimbolo">
+                <h4> Escolha seu símbolo:</h4>
+        
+                    <h3  class="x">X</h3>
+                    <div class="inputs" id="inputs">
+                        <input class="input" type="checkbox" name="check1" id="check1">
+                        <input class="input" type="checkbox" name="check2" id="check2">
+                    </div>
+                    <h3  class="o">O</h3>
+                    
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(36, 36, 36));
+    background-repeat: no-repeat;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+div {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+}
+/*
+.t1, .t2, .t3 {
+    border-top: none;
+}
+
+.t3, .t6, .t9 {
+    border-right: none;
+}
+
+.t1, .t4, .t7 {
+    border-left: none;
+}
+
+.t7, .t8, .t9 {
+    border-bottom: none;
+}*/
+
+.jogo {
+    padding: 0;
+    background-color: white;
+    border: 5px solid black;
+}
+
+td {
+    background-color: white;
+    border: 5px solid black;
+    width: 95px;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+}
+
+#divbtn {
+    z-index: 10;
+    background-color: transparent;
+}
+
+.rodapé {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+}
+
+#voltar {
+    margin-top: 25px;
+    z-index: 1;
+}
+
+.x {
+    color: #D900C4;
+}
+
+.o {
+    color: #18B500;
+}
+
+.v {
+    background: #18B500;
+    background: linear-gradient(to right, #18B500 0%, #D900C4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.x, .o, .v {
+    margin-right: 7px;
+}
+
+.pontos {
+    height: 7px;
+    text-transform: uppercase;
+    font-size: 20px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 430px;
+    padding-inline: 0;
+    display: flex;
+    align-items: center;
+    border: 6px inset rgb(187, 187, 187);
+    background-color: rgb(28, 28, 28);
+    border-radius: 8px;
+}
+
+.btn-limpaStrg {
+    border: none;
+    color: white;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.pontos div {
+    padding: 15px;
+}
+
+.pontos div h3 {
+    font-weight: bold;
+}
+
+button {
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: large;
+    border: 3px solid black;
+    margin-inline: 15px;
+}
+
+h4 {
+    color: white;
+    padding-right: 10px;
+}
+
+#range {
+    width: 35px;
+    margin-right: 10px;
+}
+
+#mensagem {
+    position: fixed;
+    width: auto;
+    height: auto;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    display: none;
+    z-index: 20;
+    top: 5px;
+}
+
+#mensagem h1 {
+    text-align: center;
+    color: white;
+    z-index: 30;
+}
+
+.escolherSimbolo {
+    display: none;
+    z-index: 40;
+}
+
+#voltar {
+    display: none;
+}
+
+.inputs {
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 0;
+    margin: 0;
+    margin-right: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid rgb(255, 255, 255);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.input:checked {
+    background-color: rgb(5, 143, 0);
+}
