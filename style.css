@@ -36,22 +36,6 @@ tr {
     display: flex;
     flex-direction: row;
 }
-/*
-.t1, .t2, .t3 {
-    border-top: none;
-}
-
-.t3, .t6, .t9 {
-    border-right: none;
-}
-
-.t1, .t4, .t7 {
-    border-left: none;
-}
-
-.t7, .t8, .t9 {
-    border-bottom: none;
-}*/
 
 .jogo {
     padding: 0;
